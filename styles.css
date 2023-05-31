@@ -4,12 +4,207 @@
 }
 
 .background-container {
-    position: fixed;
-    right: 0;
-    left: 0;
+    z-index: -2;
+    height: 100%;
+    position: absolute;
+    top: 70px;
 }
 
+/*Bckground*/
 #video {
-    min-height: 100%;
-    min-width: 100%;
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+#video2 {
+    width: 100%;
+    height: auto;
+    padding: 0;
+    margin: 0;
+}
+
+/*navigation bar*/
+.navbar {
+    background-color: black;
+    padding: 25px;
+    margin: 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: none;
+    color: azure;
+    font-size: 1.2rem;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}
+
+.link:hover {
+    font-size: 1.25rem;
+    text-shadow: 0 0 0.8rem rgb(255, 255, 255);
+}
+
+/*first layer*/
+.layer1 {
+    background-color: rgb(37, 36, 36, 0.7);
+    color: azure;
+    margin: 250px 150px 180px 150px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 10px 10px 5px rgba(41, 40, 40, 0.7);
+}
+
+.layer1 h4 {
+    padding: 20px;
+    font-size: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    text-shadow: 0 0 0.8rem white;
+}
+
+.content {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 25px 10px 25px;
+}
+
+.content > img {
+    margin: 0;
+    padding: 20px 0 20px 0;
+    width: 300px;
+    height: auto;
+}
+
+.layer1 p {
+    font-size: 20px;
+    padding: 20px 0 20px 50px;
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+}
+
+.content1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+/*second layer*/
+.layer2 {
+    background-color: rgb(5, 156, 5);
+    color: aliceblue;
+    padding: 20px 50px 50px 50px;
+    text-align: center;
+    border: 2px solid rgb(2, 71, 2);
+}
+
+.labels {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.label {
+    width: 10em;
+    height: 12em;
+    background-color: white;
+    padding: 5px;
+    border: 5px solid rgb(5, 73, 5);
+    border-radius: 5px;
+    box-shadow: 0 0 1em black;
+}
+
+.label:hover {
+    box-shadow: 0 0 1em white;
+}
+
+.heading {
+    padding-bottom: 50px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*layer three*/
+
+.layer3 {
+    margin: 150px 150px 100px 150px;
+    padding: 100px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 0.8em rgb(92, 92, 92);
+}
+
+.layer3 h2 {
+    font-size: 50px;
+    padding-bottom: 55px;
+}
+
+.layer3 h5 {
+    font-size: 25px;
+    padding-top: 50px;
+}
+
+/*layer four*/
+.layer4 {
+    margin: 0;
+    background-color: rgb(0, 90, 0);
+    color: white;
+    padding:  30px 350px 30px 350px;
+}
+
+.last-content {
+    background-color: rgb(39, 38, 38);
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+}
+.last-content h5 {
+    font-size: 25px;
+    text-align: center;
+    padding: 7px;
+    padding-left: 20px;
+}
+.last-content p {
+    padding: 8px 15px 8px 15px;
+    text-align: center;
+    font-size: 16px;
+    font-family: 'Courier New', Courier, monospace, sans-serif;
+}    
+
+.last-content button {
+    margin: 30px 20px 20px 20px;
+    padding: 10px;
+    width: 4.8em;
+    background-color: rgb(94, 221, 94);
+    font-size: 1rem;
+    border-radius: 10px;
+    border: 2px solid aliceblue;
+}
+
+button:hover {
+    background-color: rgb(1, 143, 1);
+    box-shadow: 0 0 0.8em white;
+}
+
+button > a {
+    text-decoration: none;
+    color: azure;
+}
+
+.footer {
+    background-color: black;
+    text-align: center;
+    font-size: 1rem;
+    font-family: sans-serif;
+    padding: 10px;
+}
+
+.footer > a {
+    text-decoration: none;
+    padding: 5px;
+    color: azure;
 }
